@@ -82,7 +82,8 @@ python pathway_vari.py [geneIDfile1] [gfffile] -p [ppifile] 1  database
 各pathwayのQ valueを世代ごとに表示したグラフ
 qvalueはstorey[1]の方法を使用しています。
 テストデータで行うと以下の画像のようになります。
-![graph](https://github.com/CompBio-TDU-Japan/pathway_vari/images/testgraph.png)
+
+<img src='https://github.com/CompBio-TDU-Japan/pathway_vari/blob/images/testgraph.png' width='520px'>
 
 [1]John D. Storey .et al:Statistical significance for genomewide studies. Proc Natl Acad Sci U S A. 100: 9440–9445,2003
 
