@@ -21,7 +21,6 @@ python payhway_vari.py [geneIDfile1]  [geneIDfile2] ・・・ [gfffile]
 ```
 
 [geneIDfile] は1世代分のgeneIDを一つにまとめたファイルです。左から世代順に入力してください。
-
 [gfffile] は対象生物のgffファイルです
 
 ### オプション
@@ -83,7 +82,7 @@ python pathway_vari.py [geneIDfile1] [gfffile] -p [ppifile] 1  database
 各pathwayのQ valueを世代ごとに表示したグラフ
 qvalueはstorey[1]の方法を使用しています。
 テストデータで行うと以下の画像のようになります。
-【画像】
+![graph](https://github.com/CompBio-TDU-Japan/pathway_vari/images/testgraph.png)
 
 [1]John D. Storey .et al:Statistical significance for genomewide studies. Proc Natl Acad Sci U S A. 100: 9440–9445,2003
 
