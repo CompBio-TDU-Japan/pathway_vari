@@ -180,7 +180,7 @@ def kgmlr(result, pathways, generation, gmax, stripro ,option):
     all_kimuraSCO =set()
     all_kimuravariSCO =set()
     outfile = 'rekg_result'
-    s.makedirs(outfile, exist_ok=True)
+    os.makedirs(outfile, exist_ok=True)
     sf = open("./rekg_result/geneID_list_"+generation+".txt","w")
     for pid in pathways.keys():
         kari +=1
