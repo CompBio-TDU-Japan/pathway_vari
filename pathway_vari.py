@@ -387,10 +387,10 @@ def stringdict(typ,ppifile):#STRING
 
 
 def parser():
-    usage = 'Usage: python {} [--help]  [--ppi] [evidence_type]'\
+    usage = 'Usage: python {} [--help]  [--ppi] [geneIDfile1] [geneIDfile2]...[geneIDfileN] [gfffile] [ppifile] [evidence_type]'\
             .format(__file__)
     command ="\n\n\t-h  or --help\tshow this help message"+\
-               "\n\t-p  or --ppi\tversion ppi" +\
+               "\n\t-p  or --ppi\tversion PPI" +\
                "\n\t  evidence_type"+\
                "\n\t\t0.  neighborhood"+\
                "\n\t\t1.  neighborhood_transferred"+\
@@ -405,12 +405,12 @@ def parser():
                "\n\t\t10. database_transferred"+\
                "\n\t\t11. textmining"+\
                "\n\t\t12. textmining_transferred"+\
-             "\n\n\t-pを加えるとppiのevidence_typeを指定出来ます。evidence_typeか上記の番号を引数に書いて下さい。"+\
-	     "\n\t-pまたは--ppiのみで行うと全てのevidence_typeの情報を付与します。"+\
-             "\n\tevidence_typeはSTRINGに準じています。 http://version10.string-db.org/help/getting_started/"+\
+             "\n\n\tAdd -p or --ppi to the command to analyze protein-protein interaction data in an integrated metabolic pathway. Write evidence type or the above number as an argument."+\
+	     "\n\tIf you use only -p or --ppi, information on all evidence types is given."+\
+             "\n\tThe details of the evidence type follow STRING. http://version10.string-db.org/help/getting_started/"+\
                 "\n\t　ex) 'python {} -p 1  database'".format(__file__)+\
-               "\n\t   　  はneighborhood_transferredとdatabaseのevidence_typeを持っているppiの情報をpathwayに付与します。"+\
-              "\n\n\t引数なしで行うと、ppiを付与しないdefault versionになります。"
+               "\n\t        When you run this command, information on protein-protein interactions that have an evidence type of neighborhood_transferred and database is added to the pathways."+\
+              "\n\nIf you do it without -p or --ppi, it will be the default version without PPI.\n"
     
     ppitype = ["0",'neighborhood',"1",'neighborhood_transferred',"2",'fusion',"3",'cooccurence',
 		"4",'homology',"5",'coexpression',"6",'coexpression_transferred',"7",'experiments',
