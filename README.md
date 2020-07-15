@@ -28,6 +28,7 @@ python payhway_vari.py [geneIDfile1]  [geneIDfile2] ・・・ [geneIDfileN][gfff
 ```
 
 [geneIDfile]   A list of gene IDs that are used in gfffile.
+
 [gfffile]  The gff file of the target organism.
 
 
