@@ -1,17 +1,17 @@
-#pathway_vari.py
+# pathway_vari.py
 
-##hangelog and bug information
+## hangelog and bug information
 Version 2.0     2020/7/15
 
-##Purpose of the tool
+## Purpose of the tool
 This tool evaluates and visualizes which metabolic pathways the specified mutated genes accumulate in multigenerational mutants. In order to test whether or not the mutant genes have accumulated in each pathway, this tool performs statistical hypothesis testing by calculating the binomial probability. The null hypothesis is that mutated genes do not accumulate in the set of genes corresponding to the nodes in the pathway of interest. The alternative hypothesis is that mutated genes accumulate in the set of genes corresponding to the nodes in the pathway of interest. Instead of using p-value, we used Q-value for statistical hypothesis testing. 
 
-##Requirements 
+## Requirements 
 1.      Python3.7
 2.      nsdm 
 
 
-##Installation 
+## Installation 
 * nsdm
 
 ```
@@ -19,7 +19,7 @@ This tool evaluates and visualizes which metabolic pathways the specified mutate
 ```
 
 
-##Usage
+## Usage
 
 pathway_vari.py works with the following command.
 
@@ -31,9 +31,9 @@ python payhway_vari.py [geneIDfile1]  [geneIDfile2] ・・・ [geneIDfileN][gfff
 [gfffile]  The gff file of the target organism.
 
 
-###option
+### option
 
-####-p , --ppi
+#### -p , --ppi
 Add `-p` or `--ppi` to the command to analyze protein-protein interaction data in an integrated metabolic pathway.
 Enter the commands in the following order.
 
@@ -75,7 +75,7 @@ ex )
  When you run this command, information on protein-protein interactions that have an evidence type of  `neighborhood_transferred` and  `database` is added to the pathways.
  
  
-##output
+## output
  
 The following files and directories are output.
 
@@ -92,14 +92,14 @@ A graph showing the Q value of each pathway by generation.　where Q value is re
 
 [1]John D. Storey .et al:Statistical significance for genomewide studies. Proc Natl Acad Sci U S A. 100: 9440–9445,2003
 
-###q-value.tsv
+### q-value.tsv
 A text summary of the Q values in q-value.html.
 
-###pathway_images
+### pathway_images
 This contains a colored diagram of mutation accumulation in the KEGGpathway(url:https://www.genome.jp/kegg/pathway.html) .
 
 
-###On the terminal
+### On the terminal
 You will see the following.
 
 * pathway number
